@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+
+li, summary { list-style: none;}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #393E46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border-radius: 10px;
+    width: 1000px;
+    background-color: #222831;
+    min-height: 378px;
+
+    & > header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
+    }
+
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EEEEEE;
+
+    & i {
+        font-size: 40px;
+    }
+
+    & p {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+}
+
+.coins {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #EEEEEE;
+
+    & i {
+        font-size: 40px;
+    }
+
+    & p {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+}
+
+.game {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    & > header {
+        padding: 20px 40px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        border-bottom: 1px solid #EEEEEE;
+
+        & > p {
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+    & > main {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 20px;
+        gap: 10px;
+        border-bottom: 1px solid #EEEEEE;
+    }
+}
+
+.pcBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #EEEEEE;
+
+    & i {
+        font-size: 60px;
+    }
+
+    & > div {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.userBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #EEEEEE;
+    gap: 10px;
+
+    & i {
+        font-size: 60px;
+    }
+
+    & > div {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & button {
+        padding: 15px 30px;
+        font-family: 'Poppins', sans-serif;
+        border: none;
+        font-weight: 700;
+        letter-spacing: 1px;
+        border-radius: 5px;
+
+    }
+}
+
+.infoBox {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 378px;
+    width: 100%;
+    gap: 20px;
+
+    & > .logo {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        & i {
+            font-size: 80px;
+        }
+
+        & p {
+            font-size: 50px;
+        }
+    }
+
+    & a {
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: #EEEEEE;
+        font-weight: 600;
+        font-size: 24px;
+        border: 1px solid transparent;
+        color: #222831;
+        letter-spacing: 1px;
+    }
+
+    & a:hover {
+        background-color: #222831;
+        border: 1px solid #EEEEEE;
+        color: #EEEEEE;
+        transition: all .5s;
+    }
+
+    & p {
+        font-size: 14px;
+        color: #fff;
+    }
+
+    & p > a {
+        padding: 0;
+        font-weight: 400;
+        font-size: 14px;
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        border-radius: 0
+    }
+
+    & p > a:hover {
+        color: #F9ED69;
+        border: none;
+    }
+}
+
+@media (width < 1000px) {
+
+    .container {
+        width: 300px;
+        min-height: 474px;
+    }
+
+    .home {
+        min-height: 474px;
+
+        & > .logo {
+            & > i {
+                font-size: 50px;
+            }
+
+            & > p {
+                font-size: 30px;
+            }
+        }
+
+        & > a {
+            font-size: 14px;
+        }
+
+        & p  {
+            font-size: 12px;
+            & > a {
+                font-size: 12px;
+            }
+        }
+
+
+    }
+
+    .game {
+        & header {
+            padding: 15px;
+
+            & > .logo {
+                & i {
+                    font-size: 30px;
+                }
+
+                & p {
+                    font-size: 16px;
+                }
+            }
+
+            & > .coins {
+                & p {
+                    font-size: 16px;
+                }
+
+                & i {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .game > main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        & > .pcBox {
+            & h1 {
+                font-size: 16px;
+            }
+
+            & i {
+                font-size: 40px;
+            }
+        }
+
+        & > .userBox {
+            & h1 {
+                font-size: 16px;
+            }
+
+            & i {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .infoBox {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
